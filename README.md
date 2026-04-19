@@ -1,25 +1,53 @@
-# Galeria de Arte 🎨
+# Galería de Arte
 
-Bienvenido al repositorio de Art Gallery, un sitio web interactivo que permite a los usuarios compartir sus obras de arte y participar en el concurso anual.
+Galería interactiva de arte donde los usuarios pueden compartir sus obras, dar like/dislike y participar en concursos. Incluye autenticación con Google mediante Firebase y almacenamiento de imágenes en la nube.
 
-## Características 🌟
+> Nota: Este es un proyecto académico desarrollado durante el Bootcamp Full Stack JavaScript de Desafío LATAM. Variante con Firebase del proyecto LikeMe.
 
-- **Like/Dislike**: Dale me gusta a tu obra favorita y ve cuál lleva más votos.
-- **Participa con tu imagen**: Tienes la posibilidad de subir o eliminar tus propias obras.
-- **Autenticación de Usuarios**: Ingresa y registrarte automáticamente con Google.
-- **Diseño Responsivo**: Navega desde cualquier dispositivo gracias a MaterialUI.
+## Vista previa
 
+[Ver en GitHub Pages](https://vnasp.github.io/bootcamp-social_media-likeme/)
 
-## Tecnologías Utilizadas 💻
+## Funcionalidades
 
-Este proyecto está construido utilizando las siguientes tecnologías y bibliotecas:
+- Subir y eliminar obras de arte propias
+- Sistema de like/dislike con contador de votos
+- Autenticación con Google (Firebase Auth)
+- Almacenamiento de imágenes en Firebase Storage
+- Base de datos NoSQL con Firestore
+- Galería responsiva con Material UI
 
-- **ReactJS**: Se utilizó `useState`, `useEffect` para manejar el estado.
-  - **React Router**: Para la navegación dentro de la aplicación.
-  - **React Context API**: Se usó `useContext` para gestionar el estado global de la aplicación.
-- **MaterialUI**: Para estilizar el sitio web manteniendo un diseño responsive y atractivo.
-- **Firebase**: Para implementar la autenticación, almacenamiento de imágenes, base de datos NoSQL y hosting del proyecto.
+## Tecnologías
 
-## Despliegue 🚀
+- React 18
+- React Router 6
+- React Context API
+- Material UI (MUI)
+- Firebase (Auth, Firestore, Storage)
+- Vite
 
-El sitio web está desplegado y accesible en: http://artgallery-c1d06.web.app
+## Estructura del Proyecto
+
+```
+src/
+├── components/
+│   ├── Footer.jsx
+│   ├── Header.jsx
+│   ├── ImagesAll.jsx
+│   ├── ImagesEdit.jsx
+│   ├── ImagesLike.jsx
+│   ├── ImagesUpload.jsx
+│   ├── ImagesUser.jsx
+│   ├── LogOutButton.jsx
+│   ├── LoggedHeader.jsx
+│   ├── Login.jsx
+│   └── SnackbarItem.jsx
+├── contexts/
+│   ├── AuthContext.jsx
+│   └── ImagesContext.jsx
+├── views/
+│   ├── Dashboard.jsx
+│   └── Home.jsx
+├── App.jsx
+└── main.jsx
+```
