@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Box
         component="section"
-        sx={{ ...glassStyle, flexGrow: 1, textAlign: "center", p:4 }}
+        sx={{ ...glassStyle, flexGrow: 1, textAlign: "center", p: 4 }}
       >
         <Typography component="h2" variant="h4" align="center">
           CXXXVIII Exposición de Arte
@@ -17,7 +17,11 @@ export default function Home() {
         <Typography variant="h6" align="center">
           Vota por tu obra favorita o sube tu propio arte
         </Typography>
-        <Box component="img" src={`${import.meta.env.BASE_URL}flyer.webp`} sx={{ py: 2, maxWidth:"100%" }} />
+        <Box
+          component="img"
+          src={`${import.meta.env.BASE_URL}flyer.webp`}
+          sx={{ py: 2, maxWidth: "100%" }}
+        />
       </Box>
     </>
   );
